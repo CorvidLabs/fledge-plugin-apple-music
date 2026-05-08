@@ -82,7 +82,8 @@ struct Commands {
                 let options = tracks.map { "\($0.name) — \($0.artist) (\($0.album))" }
                 FledgeProtocol.sendSelect(id: "pick-track", message: "Multiple matches for '\(name)'. Pick a track:", options: options)
                 if let response = FledgeProtocol.readResponse(),
-                   let idx = response.value?.intValue, idx >= 0, idx < tracks.count {
+                   let selected = response.value?.stringValue,
+                   let idx = options.firstIndex(of: selected) {
                     try bridge.playTrackById(tracks[idx].id)
                     FledgeProtocol.sendOutput("Playing: \(tracks[idx].name) — \(tracks[idx].artist)")
                 }
@@ -128,7 +129,8 @@ struct Commands {
             let options = tracks.map { "\($0.name) — \($0.artist) (\($0.album))" }
             FledgeProtocol.sendSelect(id: "pick-track", message: "Search results for '\(query)':", options: options)
             if let response = FledgeProtocol.readResponse(),
-               let idx = response.value?.intValue, idx >= 0, idx < tracks.count {
+               let selected = response.value?.stringValue,
+               let idx = options.firstIndex(of: selected) {
                 try bridge.playTrackById(tracks[idx].id)
                 FledgeProtocol.sendOutput("Playing: \(tracks[idx].name) — \(tracks[idx].artist)")
             }
@@ -151,7 +153,8 @@ struct Commands {
             let options = playlists.map { "\($0.name) (\($0.trackCount) tracks)" }
             FledgeProtocol.sendSelect(id: "pick-playlist", message: "Your playlists:", options: options)
             if let response = FledgeProtocol.readResponse(),
-               let idx = response.value?.intValue, idx >= 0, idx < playlists.count {
+               let selected = response.value?.stringValue,
+               let idx = options.firstIndex(of: selected) {
                 try bridge.playPlaylist(playlists[idx].name)
                 FledgeProtocol.sendOutput("Playing playlist: \(playlists[idx].name)")
             }

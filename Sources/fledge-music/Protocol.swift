@@ -66,17 +66,17 @@ enum FledgeProtocol {
         fflush(stdout)
     }
 
-    static func sendLog(_ message: String) {
+    static func sendLog(_ message: String, level: String = "info") {
         let json = """
-        {"type":"log","message":"\(escapeJson(message))"}
+        {"type":"log","level":"\(escapeJson(level))","message":"\(escapeJson(message))"}
         """
         print(json)
         fflush(stdout)
     }
 
-    static func sendOutput(_ message: String) {
+    static func sendOutput(_ text: String) {
         let json = """
-        {"type":"output","message":"\(escapeJson(message))"}
+        {"type":"output","text":"\(escapeJson(text))\\n"}
         """
         print(json)
         fflush(stdout)
