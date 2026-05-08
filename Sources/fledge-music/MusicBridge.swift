@@ -54,12 +54,18 @@ struct MusicBridge {
     }
 
     func isRunning() -> Bool {
-        let source = """
-        tell application "System Events"
-            return (name of processes) contains "Music"
-        end tell
-        """
-        return (try? run(source))?.lowercased() == "true"
+        let task = Process()
+        task.executableURL = URL(fileURLWithPath: "/usr/bin/pgrep")
+        task.arguments = ["-x", "Music"]
+        task.standardOutput = FileHandle.nullDevice
+        task.standardError = FileHandle.nullDevice
+        do {
+            try task.run()
+            task.waitUntilExit()
+            return task.terminationStatus == 0
+        } catch {
+            return false
+        }
     }
 
     func ensureRunning() throws {
