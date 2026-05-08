@@ -1,0 +1,25 @@
+[plugin]
+name = "fledge-plugin-apple-music"
+version = "0.1.0"
+description = "Control Apple Music from the terminal"
+author = "CorvidLabs"
+protocol = "fledge-v1"
+runtime = "native"
+
+[[commands]]
+name = "apple-music"
+description = "Control Apple Music playback, search, and browse"
+binary = ".build/release/fledge-music"
+
+[[commands]]
+name = "am"
+description = "Control Apple Music (shorthand)"
+binary = ".build/release/fledge-music"
+
+[capabilities]
+exec = false
+store = false
+metadata = false
+
+[hooks]
+build = "swift build -c release"
