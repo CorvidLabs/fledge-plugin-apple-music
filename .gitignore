@@ -1,6 +1,14 @@
-.build/
-.swiftpm/
+# Build artifacts
+/.build/
+/.swiftpm/
+/target/
+/dist/
+
+# Xcode
 *.xcodeproj/
 xcuserdata/
 DerivedData/
+
+# OS
 .DS_Store
+Thumbs.db

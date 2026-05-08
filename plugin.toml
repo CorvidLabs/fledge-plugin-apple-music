@@ -1,8 +1,9 @@
 [plugin]
 name = "fledge-plugin-apple-music"
 version = "0.1.0"
-description = "Control Apple Music from the terminal"
-author = "CorvidLabs"
+description = "Apple Music controls for fledge — play, pause, skip, search, and browse your library from the terminal"
+author = "0xLeif"
+license = "MIT"
 protocol = "fledge-v1"
 runtime = "native"
 

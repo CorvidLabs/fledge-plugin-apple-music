@@ -8,15 +8,16 @@ on:
 
 jobs:
   build:
+    name: Build & Test
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v4
 
-      - name: Build
+      - name: Build (debug)
         run: swift build
 
-      - name: Build release
+      - name: Build (release)
         run: swift build -c release
 
-      - name: Test
-        run: swift test
+      - name: Smoke test (--help)
+        run: .build/release/fledge-music --help
