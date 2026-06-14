@@ -3,15 +3,30 @@ name: CI
 on:
   push:
     branches: [main]
+    paths:
+      - Sources/**
+      - Package.swift
+      - Package.resolved
+      - .github/workflows/ci.yml
   pull_request:
     branches: [main]
+    paths:
+      - Sources/**
+      - Package.swift
+      - Package.resolved
+      - .github/workflows/ci.yml
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   build:
     name: Build & Test
     runs-on: macos-latest
+    timeout-minutes: 20
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Build (debug)
         run: swift build
