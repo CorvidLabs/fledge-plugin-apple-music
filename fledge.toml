@@ -1,0 +1,9 @@
+# fledge.toml: project task definitions
+[tasks]
+build = "swift build"
+release = "swift build -c release"
+smoke = ".build/release/fledge-music --help"
+
+[lanes.verify]
+description = "Build and smoke-test the Apple Music plugin"
+steps = ["build", "release", "smoke"]

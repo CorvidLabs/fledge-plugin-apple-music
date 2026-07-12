@@ -1,0 +1,34 @@
+---
+spec: apple-music.spec.md
+---
+
+## User Stories
+
+- As a macOS user, I want to control Music.app from fledge.
+- As an agent, I want structured prompts and output for interactive music commands.
+
+## Acceptance Criteria
+
+### REQ-apple-music-001
+
+The plugin SHALL expose play, pause, stop, next, previous, now-playing, search, playlist, and volume commands.
+
+### REQ-apple-music-002
+
+The plugin SHALL emit fledge-v1 structured output when initialized by fledge and readable terminal output in direct CLI mode.
+
+### REQ-apple-music-003
+
+The plugin SHALL reject Music operations when Music.app is not running and surface a descriptive error.
+
+### REQ-apple-music-004
+
+The plugin SHALL constrain volume settings to the inclusive range 0 through 100.
+
+## Constraints
+
+- macOS 13 or later, Music.app, and Swift 5.9 or later.
+
+## Out of Scope
+
+- Remote music services and non-macOS playback backends.

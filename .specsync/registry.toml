@@ -1,0 +1,5 @@
+[registry]
+name = "fledge-plugin-apple-music-trust-wave3"
+
+[specs]
+apple-music = "specs/apple-music/apple-music.spec.md"
