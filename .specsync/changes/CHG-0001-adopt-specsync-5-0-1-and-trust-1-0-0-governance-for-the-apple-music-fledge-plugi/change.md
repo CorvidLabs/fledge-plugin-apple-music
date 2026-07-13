@@ -1,6 +1,6 @@
 ---
 id: CHG-0001-adopt-specsync-5-0-1-and-trust-1-0-0-governance-for-the-apple-music-fledge-plugi
-state: implementing
+state: accepted
 type: migration
 base_commit: 506172d4662e6915eb9e108a882b9e5e6476ac82
 ---
