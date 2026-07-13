@@ -22,12 +22,12 @@ Provide macOS Apple Music playback, search, playlist, now-playing, and volume co
 
 | Type | Responsibility |
 |------|----------------|
-| `Commands` | Parse plugin arguments and dispatch playback, search, playlist, now-playing, and volume commands. |
-| `MusicBridge` | Validate Music.app availability and execute bounded AppleScript operations. |
-| `NowPlaying`, `Track`, `Playlist` | Carry Music.app results into command and protocol output. |
-| `MusicError` | Represent Music.app availability, script, and empty-result failures. |
-| `InitMessage`, `ProtocolResponse`, `ResponseValue` | Decode fledge-v1 initialization and interactive responses. |
-| `FledgeProtocol` | Read initialization, request selections, and emit structured log/output messages. |
+| Command dispatcher | Parse plugin arguments and dispatch playback, search, playlist, now-playing, and volume commands. |
+| Music bridge | Validate Music.app availability and execute bounded AppleScript operations. |
+| Result models | Carry Music.app results into command and protocol output. |
+| Music errors | Represent Music.app availability, script, and empty-result failures. |
+| Protocol models | Decode fledge-v1 initialization and interactive responses. |
+| Fledge protocol adapter | Read initialization, request selections, and emit structured log/output messages. |
 
 ## Invariants
 

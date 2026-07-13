@@ -1,6 +1,6 @@
 ---
 id: CHG-0001-adopt-specsync-5-0-1-and-trust-1-0-0-governance-for-the-apple-music-fledge-plugi
-state: draft
+state: accepted
 type: migration
 base_commit: 506172d4662e6915eb9e108a882b9e5e6476ac82
 ---
@@ -13,7 +13,7 @@ Adopt SpecSync 5.0.1 and Trust 1.0.0 governance for the Apple Music Fledge plugi
 
 ## Affected Canonical Specs
 
-- `apple-music`
+- None
 
 ## Acceptance Criteria
 
@@ -21,4 +21,4 @@ Adopt SpecSync 5.0.1 and Trust 1.0.0 governance for the Apple Music Fledge plugi
 
 ## No-spec Rationale
 
-Not applicable
+This governance adoption records stable identifiers and verification policy for existing Apple Music plugin behavior without changing its runtime semantics.

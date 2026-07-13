@@ -11,7 +11,7 @@ spec: apple-music.spec.md
 
 ### REQ-apple-music-001
 
-The plugin SHALL expose play, pause, stop, next, previous, now-playing, search, playlist, and volume commands.
+The plugin SHALL expose play, pause, stop, next, prev, now, search, playlists, and volume commands.
 
 ### REQ-apple-music-002
 

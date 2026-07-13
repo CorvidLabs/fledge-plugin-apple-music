@@ -10,5 +10,3 @@ artifact: tasks
 - [x] Add Fledge, Augur, Attest, and Trust policy.
 - [x] Add the immutable Trust workflow.
 - [x] Pass debug/release builds and release help smoke test.
-- [ ] Record definition and closing approvals.
-- [ ] Pass hosted pull-request and push checks.
