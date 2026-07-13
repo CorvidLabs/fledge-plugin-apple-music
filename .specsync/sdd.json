@@ -31,7 +31,8 @@
     "Sources/"
   ],
   "ignored_paths": [
-    ".specsync/",
+    ".specsync/changes/",
+    ".specsync/adoption-report.json",
     "specs/"
   ],
   "verification_commands": [

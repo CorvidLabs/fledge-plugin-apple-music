@@ -15,11 +15,18 @@
       "note": "Authorized non-semantic strict-documentation and generated-integration corrections; prior accepted history remains preserved."
     },
     {
+      "gate": "definition",
+      "actor": "user:0xLeif",
+      "timestamp": 1783949280,
+      "digest": "5f39b7f4b37ced896b0f2395fa8739faeee4ede4a38f0bfa5a411170c4b757d9",
+      "note": "Authorized final SDD path-governance correction; prior approval history preserved."
+    },
+    {
       "gate": "acceptance",
       "actor": "user:0xLeif",
-      "timestamp": 1783948261,
-      "digest": "b2ac1cef16657a56d546b4af56d969100b4e0663d8ecfe520e058388783af6ad",
-      "note": "Authorized non-semantic review corrections verified successfully; prior approval history preserved and hosted CI remains pending."
+      "timestamp": 1783949307,
+      "digest": "9afda92c7354547777553d5356fe88d18abe271883f50b28cb6293c596550f7c",
+      "note": "Final SDD path-governance correction verified; hosted CI remains pending."
     }
   ]
 }

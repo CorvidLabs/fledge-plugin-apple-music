@@ -15,11 +15,18 @@
       "note": "Authorized refresh after valid non-semantic review corrections; prior definition and closing history preserved except the superseded stale closing approval."
     },
     {
+      "gate": "definition",
+      "actor": "user:0xLeif",
+      "timestamp": 1783949281,
+      "digest": "85e3872ed2632ec37de52159f0e0e9aae47b0be513d57776786bb9c49b8e81da",
+      "note": "Authorized final SDD path-governance correction; prior approval history preserved."
+    },
+    {
       "gate": "acceptance",
       "actor": "user:0xLeif",
-      "timestamp": 1783948824,
-      "digest": "9d56e1e2ca9b8af95ad6448741eb39247fe12483655a2c98cbefdb7c69137ed2",
-      "note": "Fresh verification covers final non-semantic review corrections; superseded closing approval replaced while prior history remains preserved."
+      "timestamp": 1783949331,
+      "digest": "f6472ba77314ace794ba0877692adaa466c92a065a98ae51c40aef6d42ebfe01",
+      "note": "Original lifecycle refreshed against final accepted review-fix tree; hosted CI remains pending."
     }
   ]
 }
