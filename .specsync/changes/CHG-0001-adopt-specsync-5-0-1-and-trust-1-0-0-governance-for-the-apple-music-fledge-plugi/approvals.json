@@ -27,6 +27,13 @@
       "timestamp": 1783949331,
       "digest": "f6472ba77314ace794ba0877692adaa466c92a065a98ae51c40aef6d42ebfe01",
       "note": "Original lifecycle refreshed against final accepted review-fix tree; hosted CI remains pending."
+    },
+    {
+      "gate": "definition",
+      "actor": "user:0xLeif",
+      "timestamp": 1783952046,
+      "digest": "85e3872ed2632ec37de52159f0e0e9aae47b0be513d57776786bb9c49b8e81da",
+      "note": "Fresh definition approval for the user-authorized audited reopen after valid non-semantic review corrections; prior approval history preserved."
     }
   ]
 }
