@@ -1,0 +1,32 @@
+{
+  "approvals": [
+    {
+      "gate": "definition",
+      "actor": "user:0xLeif",
+      "timestamp": 1783927441,
+      "digest": "85e3872ed2632ec37de52159f0e0e9aae47b0be513d57776786bb9c49b8e81da",
+      "note": "Approved under the user-authorized CorvidLabs organization-wide SpecSync 5.0.1 and Trust 1.0.0 rollout with explicit authorization to complete and merge."
+    },
+    {
+      "gate": "definition",
+      "actor": "user:0xLeif",
+      "timestamp": 1783948772,
+      "digest": "85e3872ed2632ec37de52159f0e0e9aae47b0be513d57776786bb9c49b8e81da",
+      "note": "Authorized refresh after valid non-semantic review corrections; prior definition and closing history preserved except the superseded stale closing approval."
+    },
+    {
+      "gate": "definition",
+      "actor": "user:0xLeif",
+      "timestamp": 1783949281,
+      "digest": "85e3872ed2632ec37de52159f0e0e9aae47b0be513d57776786bb9c49b8e81da",
+      "note": "Authorized final SDD path-governance correction; prior approval history preserved."
+    },
+    {
+      "gate": "acceptance",
+      "actor": "user:0xLeif",
+      "timestamp": 1783949331,
+      "digest": "f6472ba77314ace794ba0877692adaa466c92a065a98ae51c40aef6d42ebfe01",
+      "note": "Original lifecycle refreshed against final accepted review-fix tree; hosted CI remains pending."
+    }
+  ]
+}

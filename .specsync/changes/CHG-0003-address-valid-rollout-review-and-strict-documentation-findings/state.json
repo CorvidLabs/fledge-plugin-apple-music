@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "id": "CHG-0003-address-valid-rollout-review-and-strict-documentation-findings",
+  "slug": "address-valid-rollout-review-and-strict-documentation-findings",
+  "title": "Address valid rollout review and strict documentation findings",
+  "description": "Address valid rollout review and strict documentation findings",
+  "kind": "documentation",
+  "state": "accepted",
+  "base_commit": "e8e38760ea84b95292ed98b4f028133fa6c9a0e6",
+  "created_at": 1783929738,
+  "updated_at": 1783949307,
+  "affected_specs": [],
+  "affected_paths": [
+    "specs/apple-music/",
+    ".specsync/sdd.json",
+    ".claude/",
+    ".codex/",
+    ".cursor/"
+  ],
+  "no_spec_change": true,
+  "no_spec_change_rationale": "Apple Music requirements, strict documentation labels, governance path coverage, and generated agent guidance are corrected without changing runtime behavior.",
+  "acceptance_criteria": [
+    "Strict SpecSync validation passes at 100 percent coverage",
+    "all valid review findings are addressed",
+    "generated guidance is structurally correct",
+    "and native Apple Music verification remains green."
+  ],
+  "selected_artifacts": [
+    "context",
+    "docs",
+    "design",
+    "tasks"
+  ],
+  "dependencies": [],
+  "answers": {
+    "architecture_risk": "no",
+    "public_contract": "no"
+  }
+}
