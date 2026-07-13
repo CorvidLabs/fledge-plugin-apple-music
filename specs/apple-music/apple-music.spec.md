@@ -1,6 +1,6 @@
 ---
 module: apple-music
-version: 1
+version: 2
 status: active
 files:
   - Sources/fledge-music/Commands.swift
@@ -35,7 +35,7 @@ Provide macOS Apple Music playback, search, playlist, now-playing, and volume co
 2. Volume writes are clamped to the inclusive range 0 through 100.
 3. Interactive selection uses fledge-v1 protocol messages; direct CLI mode never waits for a protocol response.
 4. Search results are limited to 20 tracks and preserve persistent IDs for playback.
-5. Unknown commands and invalid required arguments return a non-zero exit status.
+5. Unknown commands and missing search queries return a non-zero exit status; an invalid volume value prints usage, preserves playback state, and currently returns zero.
 
 ## Behavioral Examples
 
@@ -66,3 +66,4 @@ Then it emits structured output containing the track, artist, album, and playbac
 | Version | Date | Changes |
 |---------|------|---------|
 | 1 | 2026-07-12 | Document existing Apple Music plugin behavior for SpecSync 5 adoption. |
+| 2026-07-13 | CHG-0003-address-valid-rollout-review-and-strict-documentation-findings: Address valid rollout review and strict documentation findings |

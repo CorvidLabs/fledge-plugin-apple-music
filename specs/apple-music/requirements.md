@@ -23,7 +23,12 @@ The plugin SHALL reject Music operations when Music.app is not running and surfa
 
 ### REQ-apple-music-004
 
-The plugin SHALL constrain volume settings to the inclusive range 0 through 100.
+The plugin SHALL constrain applied volume settings to the inclusive range 0 through 100; an invalid explicit value prints usage and returns without applying a volume change.
+
+Acceptance Criteria
+- `up` and `down` remain bounded to 0 through 100.
+- Numeric values in range are applied.
+- Invalid explicit values print volume usage and preserve playback state.
 
 ## Constraints
 
