@@ -34,6 +34,13 @@
       "timestamp": 1783952046,
       "digest": "5f39b7f4b37ced896b0f2395fa8739faeee4ede4a38f0bfa5a411170c4b757d9",
       "note": "Fresh definition approval for the user-authorized audited reopen after valid non-semantic review corrections; prior approval history preserved."
+    },
+    {
+      "gate": "definition",
+      "actor": "user:0xLeif",
+      "timestamp": 1783953099,
+      "digest": "df2859789ac321e4b691a72ea4a5cc35679b2af973820a1ced00d5c9fcabfcc3",
+      "note": "Fresh definition approval for validated non-semantic review corrections; all prior approval history is preserved."
     }
   ]
 }

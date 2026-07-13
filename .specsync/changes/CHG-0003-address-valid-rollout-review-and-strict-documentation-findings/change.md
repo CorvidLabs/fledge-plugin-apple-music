@@ -13,15 +13,16 @@ Address valid rollout review and strict documentation findings
 
 ## Affected Canonical Specs
 
-- None
+- `apple-music`
 
 ## Acceptance Criteria
 
 - Strict SpecSync validation passes at 100 percent coverage
 - all valid review findings are addressed
-- generated guidance is structurally correct
+- generated guidance and lifecycle path coverage are structurally correct
+- the canonical contract describes current invalid-volume behavior without changing it
 - and native Apple Music verification remains green.
 
 ## No-spec Rationale
 
-Apple Music requirements, strict documentation labels, governance path coverage, and generated agent guidance are corrected without changing runtime behavior.
+Not applicable
