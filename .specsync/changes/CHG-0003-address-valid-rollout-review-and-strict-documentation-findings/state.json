@@ -6,9 +6,10 @@
   "description": "Address valid rollout review and strict documentation findings",
   "kind": "documentation",
   "state": "accepted",
+  "canonical_applied": true,
   "base_commit": "e8e38760ea84b95292ed98b4f028133fa6c9a0e6",
   "created_at": 1783929738,
-  "updated_at": 1783953158,
+  "updated_at": 1783988300,
   "affected_specs": [
     "apple-music"
   ],

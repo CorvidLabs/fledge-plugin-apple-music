@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "id": "CHG-0004-correct-apple-music-rollout-governance-metadata-by-recording-spec-version-2-in-t",
+  "slug": "correct-apple-music-rollout-governance-metadata-by-recording-spec-version-2-in-t",
+  "title": "Correct Apple Music rollout governance metadata by recording spec version 2 in the changelog and treating all installed agent integration directories as meaningful lifecycle paths",
+  "description": "Correct Apple Music rollout governance metadata by recording spec version 2 in the changelog and treating all installed agent integration directories as meaningful lifecycle paths",
+  "kind": "documentation",
+  "state": "accepted",
+  "canonical_applied": true,
+  "base_commit": "6885c43f563bee72ac24771a9d56ce92354e33c4",
+  "created_at": 1783988099,
+  "updated_at": 1783988263,
+  "affected_specs": [
+    "apple-music"
+  ],
+  "affected_paths": [
+    "specs/apple-music/apple-music.spec.md",
+    ".specsync/sdd.json"
+  ],
+  "no_spec_change": false,
+  "no_spec_change_rationale": null,
+  "acceptance_criteria": [
+    "The Apple Music spec changelog records version 2 for CHG-0003; .specsync/sdd.json includes .claude/",
+    ".codex/",
+    ".cursor/",
+    "and .gemini/ as meaningful paths; strict SpecSync coverage remains 100%; native verification passes."
+  ],
+  "selected_artifacts": [
+    "context",
+    "docs"
+  ],
+  "dependencies": [],
+  "answers": {
+    "architecture_risk": "no",
+    "public_contract": "no"
+  }
+}

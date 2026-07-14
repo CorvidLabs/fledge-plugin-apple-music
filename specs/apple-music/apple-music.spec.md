@@ -1,6 +1,6 @@
 ---
 module: apple-music
-version: 2
+version: 3
 status: active
 files:
   - Sources/fledge-music/Commands.swift
@@ -66,4 +66,5 @@ Then it emits structured output containing the track, artist, album, and playbac
 | Version | Date | Changes |
 |---------|------|---------|
 | 1 | 2026-07-12 | Document existing Apple Music plugin behavior for SpecSync 5 adoption. |
-| 2026-07-13 | CHG-0003-address-valid-rollout-review-and-strict-documentation-findings: Address valid rollout review and strict documentation findings |
+| 2 | 2026-07-13 | Address valid rollout review and strict documentation findings. |
+| 3 | 2026-07-14 | CHG-0004-correct-apple-music-rollout-governance-metadata-by-recording-spec-version-2-in-t: Correct Apple Music rollout governance metadata by recording spec version 2 in the changelog and treating all installed agent integration directories as meaningful lifecycle paths |
