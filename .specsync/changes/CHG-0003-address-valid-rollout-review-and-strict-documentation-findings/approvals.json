@@ -27,6 +27,72 @@
       "timestamp": 1783949307,
       "digest": "9afda92c7354547777553d5356fe88d18abe271883f50b28cb6293c596550f7c",
       "note": "Final SDD path-governance correction verified; hosted CI remains pending."
+    },
+    {
+      "gate": "definition",
+      "actor": "user:0xLeif",
+      "timestamp": 1783952046,
+      "digest": "5f39b7f4b37ced896b0f2395fa8739faeee4ede4a38f0bfa5a411170c4b757d9",
+      "note": "Fresh definition approval for the user-authorized audited reopen after valid non-semantic review corrections; prior approval history preserved."
+    },
+    {
+      "gate": "definition",
+      "actor": "user:0xLeif",
+      "timestamp": 1783953099,
+      "digest": "df2859789ac321e4b691a72ea4a5cc35679b2af973820a1ced00d5c9fcabfcc3",
+      "note": "Fresh definition approval for validated non-semantic review corrections; all prior approval history is preserved."
+    },
+    {
+      "gate": "acceptance",
+      "actor": "user:0xLeif",
+      "timestamp": 1783953158,
+      "digest": "21cb285a234bd33a4d5bc8899f4a7c13203d3bda709a1380035c7d9cb1370fd2",
+      "note": "Fresh closing approval after committed-head native verification of the authorized non-semantic review corrections."
+    },
+    {
+      "gate": "acceptance",
+      "actor": "user:0xLeif",
+      "timestamp": 1783988300,
+      "digest": "ab68a4c31ac8b5ace87080bd3e8c80c784ea67a285f646573d0a45b18e34bee9",
+      "note": "Fresh closing approval after successful native verification of the corrected delivery state"
+    }
+  ],
+  "reopenings": [
+    {
+      "schema_version": 1,
+      "change_id": "CHG-0003-address-valid-rollout-review-and-strict-documentation-findings",
+      "actor": "user:0xLeif",
+      "reason": "Fresh verification required after authorized non-semantic rollout review corrections",
+      "timestamp": 1783988178,
+      "from_state": "accepted",
+      "to_state": "verifying",
+      "superseded_approval": {
+        "gate": "acceptance",
+        "actor": "user:0xLeif",
+        "timestamp": 1783953158,
+        "digest": "21cb285a234bd33a4d5bc8899f4a7c13203d3bda709a1380035c7d9cb1370fd2",
+        "note": "Fresh closing approval after committed-head native verification of the authorized non-semantic review corrections."
+      },
+      "prior_verification": {
+        "timestamp": 1783953141,
+        "commit": "08927fd5a539b92c03a08760630cc71ee8af154d",
+        "contract_digest": "df2859789ac321e4b691a72ea4a5cc35679b2af973820a1ced00d5c9fcabfcc3",
+        "workspace_digest": "31401162eeb892fc6d135ddf2af17bf2a22c4796f081b42fdf928e188b142863",
+        "acceptance_input_digest": "88472f5933dee98f00e96a4f0fb4fbe7fc3c545b9dbb770d48316ab4531f2db3",
+        "passed": true,
+        "commands": [
+          {
+            "command": "fledge lanes run verify",
+            "success": true,
+            "exit_code": 0
+          }
+        ],
+        "requirement_ids": [
+          "REQ-apple-music-004"
+        ]
+      },
+      "stale_acceptance_input_digest": "88472f5933dee98f00e96a4f0fb4fbe7fc3c545b9dbb770d48316ab4531f2db3",
+      "current_acceptance_input_digest": "0835b77b50047c58a20e554b1fc1a7891e190ccfc5a27bd36d55f3f7c6af5379"
     }
   ]
 }

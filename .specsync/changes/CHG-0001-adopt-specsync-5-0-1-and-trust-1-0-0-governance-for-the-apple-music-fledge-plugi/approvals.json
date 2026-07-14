@@ -27,6 +27,77 @@
       "timestamp": 1783949331,
       "digest": "f6472ba77314ace794ba0877692adaa466c92a065a98ae51c40aef6d42ebfe01",
       "note": "Original lifecycle refreshed against final accepted review-fix tree; hosted CI remains pending."
+    },
+    {
+      "gate": "definition",
+      "actor": "user:0xLeif",
+      "timestamp": 1783952046,
+      "digest": "85e3872ed2632ec37de52159f0e0e9aae47b0be513d57776786bb9c49b8e81da",
+      "note": "Fresh definition approval for the user-authorized audited reopen after valid non-semantic review corrections; prior approval history preserved."
+    },
+    {
+      "gate": "acceptance",
+      "actor": "user:0xLeif",
+      "timestamp": 1783953158,
+      "digest": "c180e3b4bd85965ecc4b500485e293a968cbed404469ac62d2418c067cdc61dc",
+      "note": "Fresh closing approval after committed-head native verification of the authorized non-semantic review corrections."
+    },
+    {
+      "gate": "definition",
+      "actor": "user:0xLeif",
+      "timestamp": 1783957190,
+      "digest": "85e3872ed2632ec37de52159f0e0e9aae47b0be513d57776786bb9c49b8e81da",
+      "note": "Fresh definition approval under explicit audit-risk authorization; prior approval history preserved and current corrected artifacts reviewed."
+    },
+    {
+      "gate": "acceptance",
+      "actor": "user:0xLeif",
+      "timestamp": 1783957798,
+      "digest": "ebf67c6600b1066792eb00d307a20f29aa0410ef0c53bff7378629600088cd14",
+      "note": "Fresh closing approval under explicit audit-risk authorization after successful committed-head native re-verification."
+    },
+    {
+      "gate": "acceptance",
+      "actor": "user:0xLeif",
+      "timestamp": 1783988299,
+      "digest": "a5a0c24e289e26d39794a227e7d2c25c23dce5d0e6326b657f0d1a9510af50d6",
+      "note": "Fresh closing approval after successful native verification of the corrected delivery state"
+    }
+  ],
+  "reopenings": [
+    {
+      "schema_version": 1,
+      "change_id": "CHG-0001-adopt-specsync-5-0-1-and-trust-1-0-0-governance-for-the-apple-music-fledge-plugi",
+      "actor": "user:0xLeif",
+      "reason": "Fresh verification required after authorized non-semantic rollout review corrections",
+      "timestamp": 1783988177,
+      "from_state": "accepted",
+      "to_state": "verifying",
+      "superseded_approval": {
+        "gate": "acceptance",
+        "actor": "user:0xLeif",
+        "timestamp": 1783957798,
+        "digest": "ebf67c6600b1066792eb00d307a20f29aa0410ef0c53bff7378629600088cd14",
+        "note": "Fresh closing approval under explicit audit-risk authorization after successful committed-head native re-verification."
+      },
+      "prior_verification": {
+        "timestamp": 1783957645,
+        "commit": "9dddfe64596f8a58caee506f6c05a0c2b050a066",
+        "contract_digest": "85e3872ed2632ec37de52159f0e0e9aae47b0be513d57776786bb9c49b8e81da",
+        "workspace_digest": "2217c9c0fd96ec6319ac473f5a92509fc02979653516481eede34d38221e9bfb",
+        "acceptance_input_digest": "b7e4d7fd0db7c6490fa7ca1e3325a27cac9a5529e648c14f6986c3d1f951ff26",
+        "passed": true,
+        "commands": [
+          {
+            "command": "fledge lanes run verify",
+            "success": true,
+            "exit_code": 0
+          }
+        ],
+        "requirement_ids": []
+      },
+      "stale_acceptance_input_digest": "b7e4d7fd0db7c6490fa7ca1e3325a27cac9a5529e648c14f6986c3d1f951ff26",
+      "current_acceptance_input_digest": "4c5c70b73d37b89cf342525194a4b5ea9f6f44cfdfc2f749322a4a21a8306cd3"
     }
   ]
 }

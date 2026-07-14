@@ -1,9 +1,9 @@
 {
-  "timestamp": 1783949300,
-  "commit": "36452b2770edfe357eae4708288e04a76b1a2021",
-  "contract_digest": "5f39b7f4b37ced896b0f2395fa8739faeee4ede4a38f0bfa5a411170c4b757d9",
-  "workspace_digest": "2b6014eb40c9f9cfa99fc09a11cfee2a33bd99ffeed6b1e201a2c7e4a1fa56d2",
-  "acceptance_input_digest": "c508557ee00072be714bcc80caeccbe913a271d5482a14cb2e5fb80301763cad",
+  "timestamp": 1783988293,
+  "commit": "6885c43f563bee72ac24771a9d56ce92354e33c4",
+  "contract_digest": "df2859789ac321e4b691a72ea4a5cc35679b2af973820a1ced00d5c9fcabfcc3",
+  "workspace_digest": "ac33e266f20d38bd7dbe4e5e136c5a3e619feafa729ab5454506749965660dc9",
+  "acceptance_input_digest": "bfe72b77b951cad8b336e89dc18b49d0e04a2417abc9a49faab9341a478584c1",
   "passed": true,
   "commands": [
     {
@@ -12,5 +12,7 @@
       "exit_code": 0
     }
   ],
-  "requirement_ids": []
+  "requirement_ids": [
+    "REQ-apple-music-004"
+  ]
 }
