@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "id": "CHG-0003-address-valid-rollout-review-and-strict-documentation-findings",
+  "slug": "address-valid-rollout-review-and-strict-documentation-findings",
+  "title": "Address valid rollout review and strict documentation findings",
+  "description": "Address valid rollout review and strict documentation findings",
+  "kind": "documentation",
+  "state": "archived",
+  "canonical_applied": true,
+  "base_commit": "e8e38760ea84b95292ed98b4f028133fa6c9a0e6",
+  "created_at": 1783929738,
+  "updated_at": 1790696312,
+  "affected_specs": [
+    "apple-music"
+  ],
+  "affected_paths": [
+    "specs/apple-music/",
+    ".specsync/sdd.json",
+    ".claude/",
+    ".codex/",
+    ".cursor/",
+    ".gemini/"
+  ],
+  "no_spec_change": false,
+  "no_spec_change_rationale": null,
+  "acceptance_criteria": [
+    "Strict SpecSync validation passes at 100 percent coverage",
+    "all valid review findings are addressed",
+    "generated guidance and lifecycle path coverage are structurally correct",
+    "the canonical contract describes current invalid-volume behavior without changing it",
+    "and native Apple Music verification remains green."
+  ],
+  "selected_artifacts": [
+    "context",
+    "docs",
+    "design",
+    "tasks",
+    "testing"
+  ],
+  "dependencies": [],
+  "answers": {
+    "architecture_risk": "no",
+    "public_contract": "no"
+  }
+}
