@@ -1,6 +1,6 @@
 ---
 id: CHG-0004-correct-apple-music-rollout-governance-metadata-by-recording-spec-version-2-in-t
-state: accepted
+state: archived
 type: documentation
 base_commit: 6885c43f563bee72ac24771a9d56ce92354e33c4
 ---
